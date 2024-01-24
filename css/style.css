@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background-color: #010318;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative; 
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #010318;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ 
+img {
+    max-width: 100px;
+    height: auto;
+    position: absolute; /* Set the image to absolute positioning */
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the right position as needed */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+}
