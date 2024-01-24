@@ -31,6 +31,28 @@
             dedicated to staying at the forefront of emerging technologies. Eager to contribute my skills and
             knowledge to exciting and innovative projects.
           </p>
+
+          <div class="toggle-buttons">
+            <button class="btn-toggle active" onclick="showSection('skills')" id="skillsButton">Skills & Training</button>
+            <button class="btn-toggle" onclick="showSection('education')" id="educationButton">Education</button>
+          </div>
+
+          <div id="skillsSection">
+              <p>
+                Java, Python, C#, MySQL,
+                PostgreSQL, SQL, Spring Boot,
+                .Net, Django, Git, GitHub,
+                AWS, Kubernetes, HTML, CSS,
+                JavaScript, Postman, OpenAPI
+                Swagger.
+
+              </p>
+          </div>
+
+        <div id="educationSection" class="hidden">
+            <h4>BSc (Hons) Computer Science (2.1)</h4>
+            <p>University of Westminster (2019-2022)</p>
+        </div>
         </div>
         <div class="col-md-4 image">
           <img src="images/muse.jpg" alt="Muse Ali">
@@ -90,7 +112,7 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="button" onclick="submitForm()">Submit</button>
+        <button class="button-btn" type="button" onclick="submitForm()">Submit</button>
       </form>
     </section>
 
@@ -101,6 +123,19 @@
       // Add your form submission logic here
       alert('Form submitted!');
     }
+
+    function showSection(section) {
+            // Hide all sections
+            document.getElementById('skillsSection').classList.add('hidden');
+            document.getElementById('educationSection').classList.add('hidden');
+
+            // Show the selected section
+            document.getElementById(section + 'Section').classList.remove('hidden');
+
+            // Update button styles
+            document.getElementById('skillsButton').classList.toggle('active', section === 'skills');
+            document.getElementById('educationButton').classList.toggle('active', section === 'education');
+        }
   </script>
 
 </body>

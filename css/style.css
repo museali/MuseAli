@@ -75,9 +75,25 @@ textarea {
     margin-bottom: 1em;
 }
 
-button {
+.button-btn {
     background-color: #1a1a1a;
     color: #fff;
     padding: 0.5em;
     cursor: pointer;
+}
+.btn-toggle{
+    background-color: #f4f4f400;
+    border: none;
+    margin-bottom: 3%;
+}
+.toggle-buttons .btn-toggle.active {
+    border-bottom: 1px solid #f6fa0a;
+
+}
+.toggle-buttons {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
 }
