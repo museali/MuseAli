@@ -1,35 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #010318;
-    color: #fff;
+.parallax-container {
+    height: 100vh;
+    background-image: url('../images/background-img.jpg');
+    /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 1em 0;
-    position: relative; 
+    color: #fff;
+    /* Adjust text color based on your image */
+}
+
+.parallax-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    background-color: #010318;
+    padding: 20px;
 }
 
 section {
     max-width: 800px;
-    margin: 2em auto;
+    margin: 5% auto;
     padding: 20px;
     background-color: #010318;
     color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
- 
 img {
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
-    position: absolute; /* Set the image to absolute positioning */
-    top: 10px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the right position as needed */
+    position: absolute;
+    /* Set the image to absolute positioning */
+    top: 10px;
+    /* Adjust the top position as needed */
+    left: 10px;
+    /* Adjust the right position as needed */
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 form {
@@ -43,7 +69,8 @@ label {
     margin-bottom: 0.5em;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 0.5em;
     margin-bottom: 1em;
 }

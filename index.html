@@ -6,74 +6,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muse Ali - Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-  <header>
-    <h1>Muse Ali</h1>
-    <p>Software Engineer</p>
-    <img src="images/muse.jpg" alt="Muse Ali">
-  </header>
-
-  <section>
-
-    <h2>About Me</h2>
-    <p>
-      Software Engineer with a strong background in backend development and over two years of
-      experience in web development. Passionate about my career as a software engineer and
-      dedicated to staying at the forefront of emerging technologies. Eager to contribute my skills and
-      knowledge to exciting and innovative projects.
-    </p>
-  </section>
-
-  <section>
-    <div>
-      <h2>Work Experience</h2>
-      <div>
-        <h5><b>Front End Developer / something.com</b></h5>
-        <h6><i></i>Jan 2015 - </h6>
-        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt
-          hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-        <hr>
-      </div>
-      <div>
-        <h5><b>Web Developer / something.com</b></h5>
-        <h6><i></i>Mar 2012 - Dec 2014</h6>
-        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
-          sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-        <hr>
-      </div>
-      <div>
-        <h5><b>Graphic Designer / designsomething.com</b></h5>
-        <h6><i></i>Jun 2010 - Mar 2012</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-      </div>
+  <div class="parallax-container">
+    <div class="parallax-text">
+      <h1>Muse Ali</h1>
+      <p>Software Engineer - London</p>
     </div>
-  </section>
+  </div>
+  <div class="content">
 
-  <section>
-    <h2>Projects</h2>
-    <p>
-      Briefly describe some of the projects you've worked on. Mention the technologies used and your contributions.
-    </p>
-  </section>
+    <section>
+      <div class="row" id="about">
+        <div class="col-md-8"> 
+          <h2>About Me</h2>
+          <p>
+            Software Engineer with a strong background in backend development and over two years of
+            experience in web development. Passionate about my career as a software engineer and
+            dedicated to staying at the forefront of emerging technologies. Eager to contribute my skills and
+            knowledge to exciting and innovative projects.
+          </p>
+        </div>
+        <div class="col-md-4 image">
+          <img src="images/muse.jpg" alt="Muse Ali">
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <section>
+      <div>
+        <h2>Work Experience</h2>
+        <div>
+          <h3><b>Junior Software Engineer | Push Gaming</b></h3>
+          <h5><i></i>November 2022 – August 2023</h5>
+          <p>
+            In my role as a Junior Software Engineer,
+            I actively contributed to the development of various micro-services on our platform,
+            primarily using Java and adhering to test-driven development practices to ensure code reliability.
+          </p>
+          <hr>
+        </div>
+        <div>
+          <h3><b>Junior Front End Developer | Alisar Solutions Ltd</b></h3>
+          <h5><i></i>September 2016 – June 2018</h5>
+          <p>
+            As a Junior Front End Developer, I specialized in responsive web development,
+            employing HTML5, CSS3, Bootstrap, and JavaScript to create visually engaging
+            and user-friendly interfaces. Collaborating closely with the team, I actively
+            participated in the requirement gathering process, contributing to task definition
+            for sprints and ensuring alignment with project objectives.
+          </p>
+        </div>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <section>
+      <h2>Projects</h2>
+      <div>
+        <h3>project</h3>
+        <p>
+          As a Junior Front End Developer, I specialized in responsive web development,
+          employing HTML5, CSS3, Bootstrap, and JavaScript to create visually engaging
+          and user-friendly interfaces. Collaborating closely with the team, I actively
+          participated in the requirement gathering process, contributing to task definition
+          for sprints and ensuring alignment with project objectives.
+        </p>
+      </div>
+    </section>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+    <section>
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <button type="button" onclick="submitForm()">Submit</button>
-    </form>
-  </section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+    </section>
+
+
+  </div>
   <script>
     function submitForm() {
       // Add your form submission logic here
