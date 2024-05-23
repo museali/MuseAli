@@ -13,17 +13,39 @@
 
 <body>
 
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#workExperience">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="parallax-container">
     <div class="parallax-text">
       <h1>Muse Ali</h1>
       <p>Software Engineer - London</p>
     </div>
   </div>
+
   <div class="content">
 
-    <section>
+    <section class="sections" id="about">
       <div class="row" id="about">
-        <div class="col-md-8"> 
+        <div class="col-md-8">
           <h2>About Me</h2>
           <p>
             Software Engineer with a strong background in backend development and over two years of
@@ -33,26 +55,27 @@
           </p>
 
           <div class="toggle-buttons">
-            <button class="btn-toggle active" onclick="showSection('skills')" id="skillsButton">Skills & Training</button>
+            <button class="btn-toggle active" onclick="showSection('skills')" id="skillsButton">Skills &
+              Training</button>
             <button class="btn-toggle" onclick="showSection('education')" id="educationButton">Education</button>
           </div>
 
           <div id="skillsSection">
-              <p>
-                Java, Python, C#, MySQL,
-                PostgreSQL, SQL, Spring Boot,
-                .Net, Django, Git, GitHub,
-                AWS, Kubernetes, HTML, CSS,
-                JavaScript, Postman, OpenAPI
-                Swagger.
+            <p>
+              Java, Python, C#, MySQL,
+              PostgreSQL, SQL, Spring Boot,
+              .Net, Django, Git, GitHub,
+              AWS, Kubernetes, HTML, CSS,
+              JavaScript, Postman, OpenAPI
+              Swagger.
 
-              </p>
+            </p>
           </div>
 
-        <div id="educationSection" class="hidden">
+          <div id="educationSection" class="hidden">
             <h4>BSc (Hons) Computer Science (2.1)</h4>
             <p>University of Westminster (2019-2022)</p>
-        </div>
+          </div>
         </div>
         <div class="col-md-4 image">
           <img src="images/muse.jpg" alt="Muse Ali">
@@ -60,9 +83,19 @@
       </div>
     </section>
 
+  </div>
+
+  
     <section>
+      <div class="title-section">
+        <h1>Work Experience</h1>
+      </div>
+    </section>
+
+    <div class="content">
+
+    <section class="sections" id="workExperience">
       <div>
-        <h2>Work Experience</h2>
         <div>
           <h3><b>Junior Software Engineer | Push Gaming</b></h3>
           <h5><i></i>November 2022 – August 2023</h5>
@@ -86,8 +119,18 @@
         </div>
     </section>
 
+
+    </div>
+
     <section>
-      <h2>Projects</h2>
+      <div class="title-section">
+        <h1>Projects</h1>
+      </div>
+    </section>
+
+    <div class="content">
+
+    <section class="sections" id="projects">
       <div>
         <h3>project</h3>
         <p>
@@ -100,7 +143,7 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <h2>Contact Me</h2>
       <form id="contactForm">
         <label for="name">Name:</label>
@@ -114,10 +157,16 @@
 
         <button class="button-btn" type="button" onclick="submitForm()">Submit</button>
       </form>
-    </section>
+    </section> -->
 
 
   </div>
+
+  <footer class="container-fluid">
+    <h5>Created by Muse Ali - Email: museali_@hotmail.co.uk</h5>
+  </footer>
+  
+
   <script>
     function submitForm() {
       // Add your form submission logic here
@@ -125,17 +174,28 @@
     }
 
     function showSection(section) {
-            // Hide all sections
-            document.getElementById('skillsSection').classList.add('hidden');
-            document.getElementById('educationSection').classList.add('hidden');
+      // Hide all sections
+      document.getElementById('skillsSection').classList.add('hidden');
+      document.getElementById('educationSection').classList.add('hidden');
 
-            // Show the selected section
-            document.getElementById(section + 'Section').classList.remove('hidden');
+      // Show the selected section
+      document.getElementById(section + 'Section').classList.remove('hidden');
 
-            // Update button styles
-            document.getElementById('skillsButton').classList.toggle('active', section === 'skills');
-            document.getElementById('educationButton').classList.toggle('active', section === 'education');
-        }
+      // Update button styles
+      document.getElementById('skillsButton').classList.toggle('active', section === 'skills');
+      document.getElementById('educationButton').classList.toggle('active', section === 'education');
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const navLinks = document.querySelectorAll('.nav.navbar-nav li');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navLinks.forEach(item => item.classList.remove('active')); // Remove active class from all items
+        this.classList.add('active'); // Add active class to the clicked item
+      });
+    });
+  });
   </script>
 
 </body>

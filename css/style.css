@@ -1,10 +1,24 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
 }
 
+.navbar{
+    margin: 0 !important;
+    border-radius: 0% !important;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+}
+
+.navbar > .active{
+    background-color: #bb0000 !important;
+    color: #000000 !important;
+}
 .parallax-container {
     height: 100vh;
     background-image: url('../images/background-img.jpg');
@@ -28,17 +42,32 @@ body {
 }
 
 .content {
-    background-color: #010318;
+    background-color: #000000;
     padding: 20px;
 }
 
-section {
+.sections {
+    height: 100vh; 
     max-width: 800px;
     margin: 5% auto;
     padding: 20px;
-    background-color: #010318;
     color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-section{
+    height: 100vh;
+    background-image: url('../images/background-img.jpg');
+    /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
 }
 
 img {
@@ -50,6 +79,7 @@ img {
     /* Adjust the top position as needed */
     left: 10px;
     /* Adjust the right position as needed */
+    border-radius: 30%;
 }
 
 .image {
@@ -96,4 +126,10 @@ textarea {
 
 .hidden {
     display: none;
+}
+
+footer{
+    background-color: #1b1b1b;
+    color: #ffffff;
+    text-align: center;
 }
