@@ -44,41 +44,79 @@
   <div class="content">
 
     <section class="sections" id="about">
-      <div class="row" id="about">
-        <div class="col-md-8">
-          <h2>About Me</h2>
-          <p>
-            Software Engineer with a strong background in backend development and over two years of
-            experience in web development. Passionate about my career as a software engineer and
-            dedicated to staying at the forefront of emerging technologies. Eager to contribute my skills and
-            knowledge to exciting and innovative projects.
-          </p>
-
-          <div class="toggle-buttons">
-            <button class="btn-toggle active" onclick="showSection('skills')" id="skillsButton">Skills &
-              Training</button>
-            <button class="btn-toggle" onclick="showSection('education')" id="educationButton">Education</button>
+      <div class="cont">
+        <div class="row">
+          <div class="col-sm-4 profile">
+            <img src="images/muse.jpg" alt="Profile Picture">
+            <div class="profile-info">
+              <p><strong>Name:</strong> Muse Ali</p>
+              <p><strong>Profile:</strong> Software Engineer</p>
+              <p><strong>Email:</strong> contact@example.com</p>
+            </div>
+            <div class="skills">
+              <h3>Programming Languages</h3>
+              <div class="skill">
+                <p>Java</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <p>C#</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <p>Python</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <p>SQL</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div id="skillsSection">
+          <div class="col-sm-8 about">
+            <h2>About Me</h2>
             <p>
-              Java, Python, C#, MySQL,
-              PostgreSQL, SQL, Spring Boot,
-              .Net, Django, Git, GitHub,
-              AWS, Kubernetes, HTML, CSS,
-              JavaScript, Postman, OpenAPI
-              Swagger.
-
+              Software Engineer with a strong background in backend development and over two years of
+              experience in web development. Passionate about my career as a software engineer and
+              dedicated to staying at the forefront of emerging technologies. Eager to contribute my skills and
+              knowledge to exciting and innovative projects.
             </p>
+  
+            <div class="toggle-buttons">
+              <button class="btn-toggle active" onclick="showSection('skills')" id="skillsButton">Skills &
+                Training</button>
+              <button class="btn-toggle" onclick="showSection('education')" id="educationButton">Education</button>
+            </div>
+  
+            <div id="skillsSection">
+              <p>
+                Java, Python, C#, MySQL,
+                PostgreSQL, SQL, Spring Boot,
+                .Net, Django, Git, GitHub,
+                AWS, Kubernetes, HTML, CSS,
+                JavaScript, Postman, OpenAPI
+                Swagger.
+  
+              </p>
+            </div>
+  
+            <div id="educationSection" class="hidden">
+              <h4>BSc (Hons) Computer Science (2.1)</h4>
+              <p>University of Westminster (2019-2022)</p>
+            </div>
           </div>
-
-          <div id="educationSection" class="hidden">
-            <h4>BSc (Hons) Computer Science (2.1)</h4>
-            <p>University of Westminster (2019-2022)</p>
-          </div>
-        </div>
-        <div class="col-md-4 image">
-          <img src="images/muse.jpg" alt="Muse Ali">
         </div>
       </div>
     </section>

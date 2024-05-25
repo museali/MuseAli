@@ -93,11 +93,32 @@ body {
     height: 100vh;
     max-width: 800px;
     margin: 5% auto;
-    padding: 20px;
+   
     color: #ffffff;
     padding-top: 50px;
 }
 
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    margin-top: 20px;
+  }
+
+  .skills .progress {
+    margin-bottom: 10px;
+  }
+
+  .about h2 {
+    border-bottom: 2px solid #0051ff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
 .title-section {
     height: 100vh;
     background-image: url('../images/background-img.jpg');
@@ -112,24 +133,6 @@ body {
     justify-content: center;
     text-align: center;
     color: #fff;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    /* Set the image to absolute positioning */
-    top: 10px;
-    /* Adjust the top position as needed */
-    left: 10px;
-    /* Adjust the right position as needed */
-    border-radius: 30%;
-}
-
-.image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 form {
@@ -163,7 +166,7 @@ textarea {
 }
 
 .toggle-buttons .btn-toggle.active {
-    border-bottom: 1px solid #f6fa0a;
+    border-bottom: 1px solid #0051ff;
 
 }
 
