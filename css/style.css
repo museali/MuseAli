@@ -3,22 +3,65 @@ html {
 }
 
 body {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-.navbar{
-    margin: 0 !important;
-    border-radius: 0% !important;
-    color: #ffffff !important;
-    background-color: #000000 !important;
+/* Navbar initial state (no background) */
+.navbar-custom {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    margin: 0;
+    color: #ffffff;
+    border: none;
 }
 
-.navbar > .active{
-    background-color: #bb0000 !important;
-    color: #000000 !important;
+/* Navbar with background */
+.navbar-custom.scrolled {
+    background-color: #000;
+    /* Your desired background color */
 }
+
+/* Custom CSS for underline effect */
+.navbar-nav>li>a {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add space between li elements */
+.navbar-nav>li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-nav>li>a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    /* Set the underline color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav>li>a:hover::before,
+.navbar-nav>li.active>a::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Remove grey background for active link and set it to black */
+.navbar-nav>li.active>a,
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .parallax-container {
     height: 100vh;
     background-image: url('../images/background-img.jpg');
@@ -47,14 +90,15 @@ body {
 }
 
 .sections {
-    height: 100vh; 
+    height: 100vh;
     max-width: 800px;
     margin: 5% auto;
     padding: 20px;
     color: #ffffff;
+    padding-top: 50px;
 }
 
-.title-section{
+.title-section {
     height: 100vh;
     background-image: url('../images/background-img.jpg');
     /* Replace 'your-image.jpg' with the path to your image */
@@ -111,15 +155,18 @@ textarea {
     padding: 0.5em;
     cursor: pointer;
 }
-.btn-toggle{
+
+.btn-toggle {
     background-color: #f4f4f400;
     border: none;
     margin-bottom: 3%;
 }
+
 .toggle-buttons .btn-toggle.active {
     border-bottom: 1px solid #f6fa0a;
 
 }
+
 .toggle-buttons {
     margin-top: 20px;
 }
@@ -128,7 +175,7 @@ textarea {
     display: none;
 }
 
-footer{
+footer {
     background-color: #1b1b1b;
     color: #ffffff;
     text-align: center;
