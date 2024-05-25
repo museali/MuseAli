@@ -64,7 +64,7 @@ body {
 
 .parallax-container {
     height: 100vh;
-    background-image: url('../images/background-img.jpg');
+    background-image: url('../images/background-img2.jpg');
     /* Replace 'your-image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
@@ -86,16 +86,19 @@ body {
 
 .content {
     background-color: #000000;
-    padding: 20px;
+   
 }
 
 .sections {
     height: 100vh;
     max-width: 800px;
-    margin: 5% auto;
-   
-    color: #ffffff;
     padding-top: 50px;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 2% 10%;
+    border-radius: 5%;
 }
 
 .profile img {
@@ -121,7 +124,7 @@ body {
   }
 .title-section {
     height: 100vh;
-    background-image: url('../images/background-img.jpg');
+    background-image: url('../images/background-img2.jpg');
     /* Replace 'your-image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
