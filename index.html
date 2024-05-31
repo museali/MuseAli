@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
   <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
@@ -21,7 +20,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Developer</a>
+        <a class="navbar-brand" href="documents/MuseAliCV.pdf" target="_blank" download>Developer</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -38,80 +37,49 @@
     <div class="parallax-text">
       <h1>Muse Ali</h1>
       <p>Software Engineer - London</p>
+      <a href="documents/MuseAliCV.pdf" class="download-cv" target="_blank" download>Download CV</a>
     </div>
   </div>
 
   <div class="content">
 
-    <section class="container-fluid sections" id="about">
+    <section class="container sections" id="about">
       <div class="card">
         <div class="row">
           <div class="col-sm-4 profile">
             <img src="images/muse.jpg" alt="Profile Picture">
             <div class="profile-info">
-              <p><strong>Name:</strong> Muse Ali</p>
-              <p><strong>Profile:</strong> Software Engineer</p>
-              <p><strong>Email:</strong> contact@example.com</p>
-            </div>
-            <div class="skills">
-              <h3>Programming Languages</h3>
-              <div class="skill">
-                <p>Java</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                  </div>
-                </div>
-              </div>
-              <div class="skill">
-                <p>C#</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                  </div>
-                </div>
-              </div>
-              <div class="skill">
-                <p>Python</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                  </div>
-                </div>
-              </div>
-              <div class="skill">
-                <p>SQL</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                  </div>
-                </div>
-              </div>
+              <h4><strong>Name:</strong> Muse Ali</h4>
+              <h4><strong>Profile:</strong> Software Engineer</h4>
+              <h4><strong>Email:</strong> museali_@hotmail.co.uk</h4>
+              <a href="https://www.linkedin.com/in/museali/" class="fa fa-linkedin-square linkedin" target="_blank"> Lets Connect!</a>
             </div>
           </div>
           <div class="col-sm-8 about">
             <h2>About Me</h2>
-            <p>
-              Software Engineer with a strong background in backend development and over two years of
-              experience in web development. Passionate about my career as a software engineer and
-              dedicated to staying at the forefront of emerging technologies. Eager to contribute my skills and
-              knowledge to exciting and innovative projects.
-            </p>
-  
+            <p>Software Engineer with a strong background in backend development and over two years of experience in web development. Passionate about my career as a software engineer and dedicated to staying at the forefront of emerging technologies. Eager to contribute my skills and knowledge to exciting and innovative projects.</p>
             <div class="toggle-buttons">
-              <button class="btn-toggle active" onclick="showSection('skills')" id="skillsButton">Skills &
-                Training</button>
+              <button class="btn-toggle active" onclick="showSection('skills')" id="skillsButton">Skills</button>
               <button class="btn-toggle" onclick="showSection('education')" id="educationButton">Education</button>
             </div>
-  
             <div id="skillsSection">
-              <p>
-                Java, Python, C#, MySQL,
-                PostgreSQL, SQL, Spring Boot,
-                .Net, Django, Git, GitHub,
-                AWS, Kubernetes, HTML, CSS,
-                JavaScript, Postman, OpenAPI
-                Swagger.
-  
-              </p>
+              <h4>Java</h4>
+              <p>Previous work-related experience with Java, spring boot framework. Including individual projects.</p>
+              <h4>Python</h4>
+              <p>Worked on numerous projects, creating web applications, using Django, two-way communication applications and more.</p>
+              <h4>C#</h4>
+              <p>Able to utilise .Net framework and create applications for real world practice.</p>
+              <h4>JavaScript</h4>
+              <p>Using JavaScript, to help create functional websites, for clients and personal projects.</p>
+              <h4>IDE</h4>
+              <p>Visual studios, Vs code, Eclipse, NetBeans, and Intellij</p>
+              <h4>Databases</h4>
+              <p>MySQL, PostgreSQL, Microsoft SQL Server</p>
+              <h4>Tools</h4>
+              <p>Git, GitHub, Postman, Kubernetes, OpenAPI Swagger, Docker</p>
+              <h4>Other</h4>
+              <p>SQL, Spring Boot, .Net, Django, Git, GitHub, AWS, Kubernetes, HTML, CSS, Postman, OpenAPI Swagger.</p>
             </div>
-  
             <div id="educationSection" class="hidden">
               <h4>BSc (Hons) Computer Science (2.1)</h4>
               <p>University of Westminster (2019-2022)</p>
@@ -123,7 +91,6 @@
 
   </div>
 
-
   <section>
     <div class="title-section">
       <h1>Work Experience</h1>
@@ -133,30 +100,29 @@
   <div class="content">
 
     <section class="container sections" id="workExperience">
-      <div>
-        <div>
-          <h3><b>Junior Software Engineer | Push Gaming</b></h3>
-          <h5><i></i>November 2022 – August 2023</h5>
-          <p>
-            In my role as a Junior Software Engineer,
-            I actively contributed to the development of various micro-services on our platform,
-            primarily using Java and adhering to test-driven development practices to ensure code reliability.
-          </p>
-          <hr>
+      <div class="row">
+        <div class="col-md-12 experienceSection">
+          <div>
+            <h3><b>Full Stack Engineer | Freelancer</b></h3>
+            <h5><i></i>August 2023 - Freelancer</h5>
+            <p>- Created websites aligned with client specifications.<br>- Investigated and resolved bugs, managed projects with clients.</p>
+          </div>
         </div>
-        <div>
-          <h3><b>Junior Front End Developer | Alisar Solutions Ltd</b></h3>
-          <h5><i></i>September 2016 – June 2018</h5>
-          <p>
-            As a Junior Front End Developer, I specialized in responsive web development,
-            employing HTML5, CSS3, Bootstrap, and JavaScript to create visually engaging
-            and user-friendly interfaces. Collaborating closely with the team, I actively
-            participated in the requirement gathering process, contributing to task definition
-            for sprints and ensuring alignment with project objectives.
-          </p>
+        <div class="col-md-12 experienceSection">
+          <div>
+            <h3><b>Junior Software Engineer | Push Gaming</b></h3>
+            <h5><i></i>November 2022 – August 2023</h5>
+            <p>- Wrote Java code for microservices.<br>- Engaged in test-driven development and bug investigations.<br>- Created onboarding documentation and delivered knowledge-sharing presentations.<br>- Deployed applications using Kubernetes and maintained PostgreSQL databases.</p>
+          </div>
+        </div>
+        <div class="col-md-12 experienceSection">
+          <div>
+            <h3><b>Junior Front End Developer | Alisar Solutions Ltd</b></h3>
+            <h5><i></i>September 2016 – June 2018</h5>
+            <p>- Developed responsive web pages using HTML5, CSS3, Bootstrap, and JavaScript.<br>- Used PHP for form data processing and collaborated on sprint tasks.</p>
+          </div>
         </div>
     </section>
-
 
   </div>
 
@@ -167,41 +133,87 @@
   </section>
 
   <div class="content">
-
     <section class="container sections" id="projects">
       <div>
-        <h3>project</h3>
-        <p>
-          As a Junior Front End Developer, I specialized in responsive web development,
-          employing HTML5, CSS3, Bootstrap, and JavaScript to create visually engaging
-          and user-friendly interfaces. Collaborating closely with the team, I actively
-          participated in the requirement gathering process, contributing to task definition
-          for sprints and ensuring alignment with project objectives.
-        </p>
+        <h1>My Projects</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="images/c.jpg" alt="Project Image">
+              <div class="project-info">
+                <h3>Name Sorter</h3>
+                <p>Build a name sorter. Given a set of names, order that set first by last name, then by any given names the person may have. A name must have at least 1 given name and may have up to 3 given names.</p>
+                <a href="https://github.com/museali/NameSorter" class="project-link" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="images/java.jpg" alt="Project Image">
+              <div class="project-info">
+                <h3>Backend User System</h3>
+                <p>Purpose of this project is to build a backend using Spring boot, which allows users to register, email verification link and login.</p>
+                <a href="https://github.com/museali/UserSystem" class="project-link" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="images/python.png" alt="Project Image">
+              <div class="project-info">
+                <h3>SpeakIt</h3>
+                <p>Web applications that allow users to join chatrooms and create posts.</p>
+                <a href="https://github.com/museali/speakIt" class="project-link" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="images/c.jpg" alt="Project Image">
+              <div class="project-info">
+                <h3>Imaginary Store</h3>
+                <p>Allows customers to gain discounts on shopping baskets via two different types of voucher: Gift vouchers and Discount vouchers.</p>
+                <a href="https://github.com/museali/basketVoucher" class="project-link" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="images/java.jpg" alt="Project Image">
+              <div class="project-info">
+                <h3>Exchange Rate</h3>
+                <p>Currency rates tracks foreign exchange references rates published by the European Central Bank.</p>
+                <a href="https://github.com/museali/exchange-rate?tab=readme-ov-file" class="project-link" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project-card">
+              <img src="images/java.jpg" alt="Project Image">
+              <div class="project-info">
+                <h3>IP finder</h3>
+                <p>Finds your current IP address and provides more information.</p>
+                <a href="https://github.com/museali/ip" class="project-link" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
-
-    <!-- <section>
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button class="button-btn" type="button" onclick="submitForm()">Submit</button>
-      </form>
-    </section> -->
-
-
   </div>
 
   <footer class="container-fluid">
-    <h5>Created by Muse Ali - Email: museali_@hotmail.co.uk</h5>
+    <h5>Created by Muse Ali</h5>
   </footer>
 
 
@@ -244,6 +256,28 @@
         navbar.classList.remove('scrolled');
       }
     });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const projectCards = document.querySelectorAll('.project-card img');
+
+      projectCards.forEach(card => {
+        card.addEventListener('click', function() {
+          if (this.classList.contains('clicked')) {
+            this.classList.remove('clicked');
+            this.nextElementSibling.style.opacity = '0';
+          } else {
+            projectCards.forEach(c => {
+              c.classList.remove('clicked');
+              c.nextElementSibling.style.opacity = '0';
+            });
+            this.classList.add('clicked');
+            this.nextElementSibling.style.opacity = '1';
+          }
+        });
+      });
+    });
+
   </script>
 
 </body>
