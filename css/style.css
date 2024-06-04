@@ -91,34 +91,13 @@ body, html {
     margin-bottom: 40px;
     background-color: #000000;
     border-radius: 10px;
+    height: 100vh;
   }
   
   .card{
     background-color: #ffffff;
     padding: 4%;
 }
-  .profile img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .profile-info h4 {
-    margin-top: 10px;
-  }
-
-  .about h4, .profile-info > h4 > strong{
-    color: #0051ff;
-  }
-  .about h2 {
-    border-bottom: 2px solid #0051ff;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-
-  .about {
-    padding-top: 20px;
-  }
-  
   .toggle-buttons {
     margin-top: 20px;
   }
@@ -146,6 +125,52 @@ body, html {
     text-align: center;
     color: #fff;
   }
+/* About Section */
+
+.about-me {
+  padding: 100px 0;
+}
+
+.description h1 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.description p {
+  font-size: 1.2em;
+  color: #ddd;
+}
+
+.tags {
+  margin: 20px 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #ddd;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.profile-pic img {
+  border-radius: 10%;
+  width: 300px;
+  height: auto;
+}
 
 /* Experience Section */
  
