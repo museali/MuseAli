@@ -413,9 +413,11 @@ footer {
 
   @media (max-width: 768px) {
     .parallax-container {
-      height: 50vh;
+      background-attachment: scroll;
     }
-  
+    .title-section{
+      background-attachment: scroll;
+    }
     .parallax-text {
       padding: 10px;
     }
